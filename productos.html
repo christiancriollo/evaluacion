@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone | Productos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            padding: 20px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .titulo {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        .titulo h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .titulo p {
+            color: #666;
+        }
+
+        .productos {
+            padding: 30px 8% 70px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .producto {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            padding-bottom: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px #00000015;
+        }
+
+        .producto img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .producto h3 {
+            margin: 20px 10px 10px;
+            font-size: 22px;
+        }
+
+        .producto p {
+            color: #666;
+            padding: 0 20px;
+            line-height: 1.5;
+        }
+
+        .producto strong {
+            display: block;
+            color: #2563eb;
+            font-size: 22px;
+            margin: 20px;
+        }
+
+        button {
+            border: none;
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 900px) {
+            .productos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .productos {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>TechZone</h1>
+
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="titulo">
+        <h2>Nuestros productos</h2>
+        <p>Encuentra la tecnología que estás buscando.</p>
+    </section>
+
+    <section class="productos">
+
+        <article class="producto">
+            <img src="img/celular.jpg" alt="Celular">
+            <h3>Smartphone X10</h3>
+            <p>Celular moderno con excelente cámara y batería.</p>
+            <strong>$299.99</strong>
+            <button>Comprar</button>
+        </article>
+
+        <article class="producto">
+            <img src="img/laptop.jpg" alt="Laptop">
+            <h3>Laptop Pro</h3>
+            <p>Laptop ideal para estudiar, trabajar y navegar.</p>
+            <strong>$749.99</strong>
+            <button>Comprar</button>
+        </article>
+
+        <article class="producto">
+            <img src="img/audifonos.jpg" alt="Audífonos">
+            <h3>Audífonos AirSound</h3>
+            <p>Sonido de alta calidad y conexión inalámbrica.</p>
+            <strong>$59.99</strong>
+            <button>Comprar</button>
+        </article>
+
+        <article class="producto">
+            <img src="img/reloj.jpg" alt="Smartwatch">
+            <h3>Smartwatch Fit</h3>
+            <p>Controla tus actividades y notificaciones.</p>
+            <strong>$89.99</strong>
+            <button>Comprar</button>
+        </article>
+
+        <article class="producto">
+            <img src="img/teclado.jpg" alt="Teclado">
+            <h3>Teclado Gaming</h3>
+            <p>Teclado mecánico con iluminación RGB.</p>
+            <strong>$69.99</strong>
+            <button>Comprar</button>
+        </article>
+
+        <article class="producto">
+            <img src="img/mouse.jpg" alt="Mouse">
+            <h3>Mouse Gamer</h3>
+            <p>Mouse ergonómico para videojuegos.</p>
+            <strong>$39.99</strong>
+            <button>Comprar</button>
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 TechZone. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

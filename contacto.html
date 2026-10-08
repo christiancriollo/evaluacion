@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone | Contacto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            padding: 20px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .contacto {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 8%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .informacion h2 {
+            font-size: 42px;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+
+        .informacion > p {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 35px;
+        }
+
+        .dato {
+            margin-bottom: 25px;
+        }
+
+        .dato strong {
+            color: #2563eb;
+        }
+
+        .dato p {
+            margin-top: 7px;
+            color: #555;
+        }
+
+        form {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px #00000015;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 7px;
+            font-family: Arial, sans-serif;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 7px;
+            background: #2563eb;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 750px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .contacto {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>TechZone</h1>
+
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="contacto">
+
+        <div class="informacion">
+
+            <h2>Contáctanos</h2>
+
+            <p>
+                ¿Tienes alguna pregunta? Escríbenos y estaremos
+                encantados de ayudarte.
+            </p>
+
+            <div class="dato">
+                <strong>📍 Dirección</strong>
+                <p>Av. Principal 123, Ecuador</p>
+            </div>
+
+            <div class="dato">
+                <strong>📞 Teléfono</strong>
+                <p>099 123 4567</p>
+            </div>
+
+            <div class="dato">
+                <strong>📧 Correo</strong>
+                <p>contacto@techzone.com</p>
+            </div>
+
+        </div>
+
+        <form>
+
+            <label for="nombre">Nombre</label>
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Escribe tu nombre"
+            >
+
+            <label for="correo">Correo electrónico</label>
+            <input
+                type="email"
+                id="correo"
+                placeholder="ejemplo@gmail.com"
+            >
+
+            <label for="asunto">Asunto</label>
+            <input
+                type="text"
+                id="asunto"
+                placeholder="Escribe el asunto"
+            >
+
+            <label for="mensaje">Mensaje</label>
+            <textarea
+                id="mensaje"
+                rows="6"
+                placeholder="Escribe tu mensaje"
+            ></textarea>
+
+            <button type="submit">
+                Enviar mensaje
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 TechZone. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
